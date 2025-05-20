@@ -1,57 +1,326 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arjuna Sutan | Data Analyst Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; color: #333; }
-    h1, h2 { color: #2c3e50; }
-    .container { max-width: 900px; margin: auto; }
-    .section { margin-bottom: 40px; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>👋 Hi, I'm Arjuna Sutan</h1>
-    <p>MSc Data Science Student | Data Analyst | Problem Solver</p>
-
-    <div class="section">
-      <h2>📌 About Me</h2>
-      <p>
-        I'm a passionate Data Analyst with a background in Mechanical Engineering.
-        I use Python, SQL, and Power BI to turn data into actionable insights. Currently working at HexaConsult on internet coverage optimization projects using geospatial data.
-      </p>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page with Portfolio Detail Modals
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white">
+  <!-- Home Page -->
+  <div class="max-w-4xl mx-auto" id="homePage">
+   <div class="h-36 w-full">
+    <img alt="Gradient background from blue to peach" class="w-full h-full object-cover" height="144" src="https://storage.googleapis.com/a1aa/image/53c68193-85fb-411a-8821-e7a9fabd74ef.jpg" width="1200"/>
+   </div>
+   <div class="px-6 pt-6">
+    <div class="text-5xl">
+     👨🏻‍💼
     </div>
-
-    <div class="section">
-      <h2>📊 Featured Projects</h2>
-      <ul>
-        <li><strong>Amazon Food Review Sentiment Analysis</strong><br/> NLP, TF-IDF, Word2Vec, Clustering, Classification</li>
-        <li><strong>Olist E-Commerce Dashboard</strong><br/> SQL, Customer Growth Analysis, Delivery Performance</li>
-        <li><strong>Restaurant Sales Dashboard</strong><br/> Power BI, Trend Analysis, Interactive Reporting</li>
-        <li><strong>Population Forecasting</strong><br/> Python, VAR Model, Time Series</li>
-      </ul>
-      <p>📂 <a href="https://github.com/Nasutan">View more on my GitHub</a></p>
-    </div>
-
-    <div class="section">
-      <h2>📄 Resume</h2>
-      <p><a href="https://github.com/Nasutan/portfolio/raw/main/ARJUNA_SUTAN_CV.pdf" target="_blank">Download My CV</a></p>
-    </div>
-
-    <div class="section">
-      <h2>📬 Contact Me</h2>
-      <ul>
-        <li>Email: <a href="mailto:sutanarjuna98@gmail.com">sutanarjuna98@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/arjuna-sutan" target="_blank">arjuna-sutan</a></li>
-        <li>GitHub: <a href="https://github.com/Nasutan" target="_blank">Nasutan</a></li>
-        <li>Location: Kuala Lumpur, Malaysia</li>
-      </ul>
-    </div>
+    <h1 class="font-extrabold text-2xl mt-2 text-gray-900">
+     Arjuna Sutan
+    </h1>
+    <p class="text-xs font-semibold text-gray-600 mt-1">
+     DATA ANALYST | MECHANICAL ENGINEER | TECH SAVVY
+    </p>
+    <p class="text-xs text-gray-600 mt-1 flex items-center gap-1">
+     <span>
+      📍
+     </span>
+     Kuala Lumpur, Malaysia
+    </p>
+    <p class="text-xs text-gray-600 mt-1">
+     ⌘⌘
+    </p>
+   </div>
+   <div class="grid grid-cols-3 gap-2 px-6 mt-4">
+    <button aria-label="Go to Portfolio page" class="flex flex-col rounded-md border border-gray-200 overflow-hidden cursor-pointer" id="portfolioBtn">
+     <img alt="Empty white placeholder image for Portfolio" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/6a65004d-dde5-48a7-16ea-1cc3555cb77e.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-briefcase">
+      </i>
+      Portfolio
+     </div>
+    </button>
+    <a class="flex flex-col rounded-md border border-gray-200 overflow-hidden" href="#">
+     <img alt="Man working at desk with laptop and plants image for About Me" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/d14d7ccc-df4a-4e0f-2218-3475eb5d319c.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-user">
+      </i>
+      About Me
+     </div>
+    </a>
+    <a class="flex flex-col rounded-md border border-gray-200 overflow-hidden" href="#">
+     <img alt="Office desk with stationery and keyboard image for Services" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/62b6a509-570f-4482-0409-ea4220ce0193.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-palette">
+      </i>
+      Services
+     </div>
+    </a>
+    <a class="flex flex-col rounded-md border border-gray-200 overflow-hidden" href="#">
+     <img alt="Hands typing on keyboard image placeholder" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/f49e4469-ceee-4996-6b2c-05a076b9ebfe.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-keyboard">
+      </i>
+      Keyboard
+     </div>
+    </a>
+    <a class="flex flex-col rounded-md border border-gray-200 overflow-hidden" href="#">
+     <img alt="Empty white placeholder image" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/422711eb-9fc5-4a60-f853-ac4e5141c983.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-file">
+      </i>
+      Document
+     </div>
+    </a>
+    <a class="flex flex-col rounded-md border border-gray-200 overflow-hidden" href="#">
+     <img alt="New page placeholder with plus sign" class="w-full h-28 object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/ca50165a-3953-4014-ccb0-97892c5b70d8.jpg" width="200"/>
+     <div class="px-2 py-1 text-xs text-gray-700 flex items-center gap-1">
+      <i class="fas fa-plus">
+      </i>
+      New page
+     </div>
+    </a>
+   </div>
   </div>
-</body>
+  <!-- Portfolio Page -->
+  <div class="max-w-4xl mx-auto px-6 py-6 hidden" id="portfolioPage">
+   <button aria-label="Back to Home page" class="mb-4 text-blue-600 hover:underline text-sm flex items-center gap-1" id="backBtn">
+    <i class="fas fa-arrow-left">
+    </i>
+    Back
+   </button>
+   <h2 class="text-2xl font-extrabold mb-4 text-gray-900">
+    Portfolio Gallery
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <!-- Each item is a button to open modal -->
+    <button aria-controls="modalProject1" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalProject1">
+     <img alt="Project 1 placeholder image showing a modern tech project" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/1cd1fd9e-b4e3-4d01-9757-7ba79978887c.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Project 1
+     </p>
+    </button>
+    <button aria-controls="modalProject2" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalProject2">
+     <img alt="Project 2 placeholder image showing a modern tech project" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/3a42f92c-32a7-4ae6-a261-26546c00d5b4.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Project 2
+     </p>
+    </button>
+    <button aria-controls="modalExperience1" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalExperience1">
+     <img alt="Experience 1 placeholder image showing professional experience" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/bd747b1d-bc2b-48f1-8993-bd9f2b69e805.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Experience 1
+     </p>
+    </button>
+    <button aria-controls="modalExperience2" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalExperience2">
+     <img alt="Experience 2 placeholder image showing professional experience" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/62327cb1-d320-4490-db61-9a13cb01d5d0.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Experience 2
+     </p>
+    </button>
+    <button aria-controls="modalProject3" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalProject3">
+     <img alt="Project 3 placeholder image showing a modern tech project" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/4e7a7f3a-1a2b-4f3a-9a7a-1a2b3c4d5e6f.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Project 3
+     </p>
+    </button>
+    <button aria-controls="modalExperience3" aria-haspopup="dialog" class="border rounded-md p-2 flex flex-col items-center bg-white shadow-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500" data-modal="modalExperience3">
+     <img alt="Experience 3 placeholder image showing professional experience" class="w-full h-40 object-cover rounded-md mb-2" height="160" src="https://storage.googleapis.com/a1aa/image/7f8e9d0a-2b3c-4d5e-8f9a-0b1c2d3e4f5a.jpg" width="300"/>
+     <p class="text-sm font-semibold text-gray-800">
+      Experience 3
+     </p>
+    </button>
+   </div>
+  </div>
+  <!-- Modals for each project/experience -->
+  <!-- Modal Template -->
+  <div aria-labelledby="modalProject1Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalProject1" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalProject1">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalProject1Title">
+     Project 1
+    </h3>
+    <img alt="Project 1 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/1cd1fd9e-b4e3-4d01-9757-7ba79978887c.jpg"/>
+    <p class="text-gray-700 mb-4">
+     This is a detailed description of Project 1. Here you can add photos,
+        explain the project goals, technologies used, and outcomes.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Project 1 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/237ea491-0249-4ba0-3a4a-a18b9135e04d.jpg" width="400"/>
+     <img alt="Project 1 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/d3afe198-2661-4b1a-c87c-4138e04b2e1b.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <div aria-labelledby="modalProject2Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalProject2" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalProject2">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalProject2Title">
+     Project 2
+    </h3>
+    <img alt="Project 2 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/3a42f92c-32a7-4ae6-a261-26546c00d5b4.jpg"/>
+    <p class="text-gray-700 mb-4">
+     This is a detailed description of Project 2. Describe the project
+        details, challenges, and results here.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Project 2 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/7e1d268a-9082-469a-1df4-ea816acb80e3.jpg" width="400"/>
+     <img alt="Project 2 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/1f47cce9-f677-456d-0f42-78b585b04c0f.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <div aria-labelledby="modalExperience1Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalExperience1" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalExperience1">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalExperience1Title">
+     Experience 1
+    </h3>
+    <img alt="Experience 1 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/bd747b1d-bc2b-48f1-8993-bd9f2b69e805.jpg"/>
+    <p class="text-gray-700 mb-4">
+     Detailed description of Experience 1. Include your role, responsibilities,
+        and achievements.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Experience 1 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/c6f6e232-804f-44e5-cb27-227508ec1031.jpg" width="400"/>
+     <img alt="Experience 1 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/c609d4d3-bff1-41b3-8c11-0e82e43ae3e6.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <div aria-labelledby="modalExperience2Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalExperience2" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalExperience2">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalExperience2Title">
+     Experience 2
+    </h3>
+    <img alt="Experience 2 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/62327cb1-d320-4490-db61-9a13cb01d5d0.jpg"/>
+    <p class="text-gray-700 mb-4">
+     Detailed description of Experience 2. Include your role, responsibilities,
+        and achievements.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Experience 2 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/d456281f-f51a-4156-0a13-7a31f68fbdc1.jpg" width="400"/>
+     <img alt="Experience 2 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/ec379767-bea3-4145-d505-63ef8e88e329.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <div aria-labelledby="modalProject3Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalProject3" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalProject3">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalProject3Title">
+     Project 3
+    </h3>
+    <img alt="Project 3 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/4e7a7f3a-1a2b-4f3a-9a7a-1a2b3c4d5e6f.jpg"/>
+    <p class="text-gray-700 mb-4">
+     This is a detailed description of Project 3. Describe the project
+        details, challenges, and results here.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Project 3 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/ce05c145-830c-4c58-8baa-ebf6076c68d7.jpg" width="400"/>
+     <img alt="Project 3 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/957aa8a2-e5df-4caf-e95c-79a8aec4c72d.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <div aria-labelledby="modalExperience3Title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden" id="modalExperience3" role="dialog">
+   <div class="bg-white rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close modal" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900" data-close="modalExperience3">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-xl font-bold mb-4" id="modalExperience3Title">
+     Experience 3
+    </h3>
+    <img alt="Experience 3 detailed image" class="w-full h-48 object-cover rounded mb-4" src="https://storage.googleapis.com/a1aa/image/7f8e9d0a-2b3c-4d5e-8f9a-0b1c2d3e4f5a.jpg"/>
+    <p class="text-gray-700 mb-4">
+     Detailed description of Experience 3. Include your role, responsibilities,
+        and achievements.
+    </p>
+    <div class="grid grid-cols-2 gap-2">
+     <img alt="Experience 3 additional photo 1" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/dc2cb097-749a-45df-5cb3-003312354b90.jpg" width="400"/>
+     <img alt="Experience 3 additional photo 2" class="w-full h-32 object-cover rounded" height="300" src="https://storage.googleapis.com/a1aa/image/f1aeabc9-c869-484a-9ede-613fe89e0945.jpg" width="400"/>
+    </div>
+   </div>
+  </div>
+  <script>
+   const portfolioBtn = document.getElementById("portfolioBtn");
+    const backBtn = document.getElementById("backBtn");
+    const homePage = document.getElementById("homePage");
+    const portfolioPage = document.getElementById("portfolioPage");
+
+    portfolioBtn.addEventListener("click", () => {
+      homePage.classList.add("hidden");
+      portfolioPage.classList.remove("hidden");
+      window.scrollTo(0, 0);
+    });
+
+    backBtn.addEventListener("click", () => {
+      portfolioPage.classList.add("hidden");
+      homePage.classList.remove("hidden");
+      window.scrollTo(0, 0);
+      closeAllModals();
+    });
+
+    // Modal open/close logic
+    const modalButtons = portfolioPage.querySelectorAll("button[data-modal]");
+    const modals = document.querySelectorAll("div[role='dialog']");
+
+    modalButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const modalId = btn.getAttribute("data-modal");
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.querySelector("button[data-close]").focus();
+          document.body.style.overflow = "hidden"; // prevent background scroll
+        }
+      });
+    });
+
+    modals.forEach((modal) => {
+      const closeBtn = modal.querySelector("button[data-close]");
+      closeBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+        document.body.style.overflow = ""; // restore scroll
+      });
+      // Close modal on click outside content
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          document.body.style.overflow = "";
+        }
+      });
+      // Close modal on Escape key
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          modal.classList.add("hidden");
+          document.body.style.overflow = "";
+        }
+      });
+    });
+
+    function closeAllModals() {
+      modals.forEach((modal) => {
+        modal.classList.add("hidden");
+      });
+      document.body.style.overflow = "";
+    }
+  </script>
+ </body>
 </html>
